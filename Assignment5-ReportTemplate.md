@@ -77,12 +77,34 @@ Overall, RGA is powerful but must be applied with careful attention to its assum
 
 # Assessment Using Reliability Demonstration Chart 
 
+To apply the data to RDC, we assumed that in each time interval, the failure appeared at an even time. E.g., for the first interval where FC = 2, E = 0.05, we assumed each failure took 0.025 hours. Then, we calculate the cumulative time for the RDC's Interval When Observed column. For the 92 failure occured, the cumulative E = 54.3.
+
+## Evaluation and Justification of How We Decide the MTTFmin
+
+For the risk profile, we set Discrimination Ratio γ = 1.2, Developer's Risk α = 0.1, and User's Risk β = 0.1.  
+
+The MTTFmin was determined by iteratively adjusting the MTTF until finding the boundary where the line never crosses into the Reject region and ends up in the Accept region.  
+
+In the end, the MTTFmin we found was roughly 54 intervals / 1500 Failures = 0.036. Therefore, twice of it is 54 / 750 = 0.072, half of it is 54 / 3000 = 0.018.  
+
+As shown in the following plots, the line never enters the Reject region and ends at the Accept region when MTTF = 0.036; when MTTF = 0.072, the SUT is rejected shortly after the 15th failure; when MTTF = 0.018, more parts of the line stay in the Accept region.  
+
+The MTTFmin of 0.036 seems much lower than the overall average MTTF, where 54.3 / 92 = 0.59. Because the software experienced a severe density of failures early in testing (13 failures in the first 1.05 units of effort), the chart plot rises aggressively at the start. To prevent the software from crossing the Reject boundary during this early unstable phase, the target MTTF had to be lowered drastically to 0.036.
+
 ## Plot for MTTFmin
 ![](./media/RDC_1.png)
 ## Plot for twice of MTTFmin
 ![](./media/RDC_2.png)
 ## Plot for half of MTTFmin
 ![](./media/RDC_3.png)
+
+## Advantages of RDC
+
+1. Time and cost efficient: a buggy system may enter the Reject region quickly, saving QA resources.
+2. Highly visual and easy to understand.
+3. Customizable risk profiles: they can be adjusted to fit different types of systems' strictness.
+
+## Disadvantages of RDC
 
 # Comparison of Results
 
