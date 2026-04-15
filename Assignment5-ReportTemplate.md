@@ -31,6 +31,9 @@ Generally models with lower AIC or BIC are generally preferred.
 A set of candidate models was evaluated using multiple selection criteria, including log-likelihood, Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), and error-based metrics such as SSE. Among all models, DW3 (F) and GM (F) emerged as the top two based on their superior performance.
 After analyzing the Model Comparison tables from C-SFRAT, we determined that the Discrete Weibull Type 3 model, with covariate F is the best model, with AIC of 122.199 and BIC of 127.935. The second best is the Geometric Model with covariate F with AIC of 125.323 and BIC of 129.625.
 
+## Model Comparison (selecting top two models)
+![](./media/Top_model.png)
+
 
 Based on the provided dataset (failure-dataset-a5.csv), the file contains 31 test intervals (T = 1 to 31).
 Applying Sturges' Rule — k = 1 + log₂(n) — to the total number of failures (n = 31)
