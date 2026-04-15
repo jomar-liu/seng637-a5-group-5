@@ -38,7 +38,7 @@ After analyzing the Model Comparison tables from C-SFRAT, we determined that the
 ![](./media/MVF_Graph_A5.PNG)
 
 Based on the provided dataset (failure-dataset-a5.csv), the file contains 31 test intervals (T = 1 to 31).
-Applying Sturges' Rule — k = 1 + log₂(n) — to the total number of failures (n = 31)
+Applying Sturges' Rule — k = 1 + log₂(n) — to the total number of intervals (n = 31)
 k = 1 + log₂(31) = 5.95 ≈ 6 intervals
 
 Applying Sturges’ Rule to the number of test intervals (n = 31) yields approximately 6 intervals. However, due to the non-uniform distribution of failures and the presence of a mid-phase spike, 8 intervals were selected. This allows for better resolution of changes in failure intensity while still maintaining reasonable smoothing.
