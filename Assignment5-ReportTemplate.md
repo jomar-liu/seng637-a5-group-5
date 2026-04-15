@@ -11,7 +11,6 @@
 
 # Introduction
 This lab analyzes integration test failure data using two reliability assessment approaches: Reliability Growth Testing and Reliability Demonstration Charts (RDC). Reliability growth testing models how failure intensity changes over time as faults are detected and fixed, while RDC evaluates whether the system meets specified reliability targets. Together, these methods provide both analytical insight and decision support for assessing the reliability of the system under test (SUT).
-# 
 
 # Assessment Using Reliability Growth Testing 
 Reliability growth testing helps estimate time, cost, and trends for improving product reliability through corrective actions.
@@ -59,7 +58,7 @@ The failure spike around T19–T22 (8, 9, 6, 7 failures respectively) is correla
 
 
 | Range        | Intervals   | Failures | Laplace U | Interpretation                          | Analysis            |
-|--------------|-------------|----------|-----------|------------------------------------------|---------------------|
+|--------------|-------------|----------|-----------|-----------------------------------------|---------------------|
 | Full dataset | T1 – T31    | 92       | −0.58     | No dominant trend (mixed)               | With caution        |
 | Early phase  | T1 – T10    | 30       | −2.47     | Significant reliability growth          | Yes — growth        |
 | Mid phase    | T11 – T20   | 29       | +1.42     | Borderline degradation / instability    | With caution        |
@@ -100,13 +99,21 @@ The MTTFmin of 0.036 seems much lower than the overall average MTTF, where 54.3 
 
 ## Advantages of RDC
 
-1. Time and cost efficient: a buggy system may enter the Reject region quickly, saving QA resources.
+1. Time and cost efficient: A buggy system may enter the Reject region quickly, saving QA resources.
 2. Highly visual and easy to understand.
-3. Customizable risk profiles: they can be adjusted to fit different types of systems' strictness.
+3. Customizable risk profiles: They can be adjusted to fit different types of systems' strictness.
 
 ## Disadvantages of RDC
 
+1. Very sensitive to early data: Some systems may be less reliable at the beginning. Similar to the data in this lab, the sudden burst of failures at the beginning goes towards the Reject region rapidly.
+2. Inability to predict the future.
+3. Requires exact time per failure, which may be harder to gather.
+
 # Comparison of Results
+
+Reliability Growth Testing provided a prediction of the SUT's reliability, while the RDC demonstrated whether the system was rejected or accepted at every moment.  
+
+Therefore, it seems like they have different specializations. The Reliability Growth Testing focuses on the future trend of a system, while the RDC gives a real-time determination on whether the system should be rejected or accepted. 
 
 # Discussion on Similarity and Differences of the Two Techniques
 
