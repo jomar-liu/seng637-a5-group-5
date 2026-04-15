@@ -22,7 +22,7 @@
 ## Plot for twice of MTTFmin
 ![](./media/RDC_2.png)
 ## Plot for half of MTTFmin
-![](./media/RDC_1.png)
+![](./media/RDC_3.png)
 
 # Comparison of Results
 
