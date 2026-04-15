@@ -28,6 +28,19 @@ BIC is similar to AIC but applies a stronger penalty for complexity, especially 
 
 Generally models with lower AIC or BIC are generally preferred.
 
+A set of candidate models was evaluated using multiple selection criteria, including log-likelihood, Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), and error-based metrics such as SSE. Among all models, DW3 (F) and GM (F) emerged as the top two based on their superior performance.
+After analyzing the Model Comparison tables from C-SFRAT, we determined that the Discrete Weibull Type 3 model, with covariate F is the best model, with AIC of 122.199 and BIC of 127.935. The second best is the Geometric Model with covariate F with AIC of 125.323 and BIC of 129.625.
+
+
+Based on the provided dataset (failure-dataset-a5.csv), the file contains 31 test intervals (T = 1 to 31).
+Applying Sturges' Rule — k = 1 + log₂(n) — to the total number of failures (n = 31)
+k = 1 + log₂(31) = 5.95 ≈ 6 intervals
+
+Applying Sturges’ Rule to the number of test intervals (n = 31) yields approximately 6 intervals. However, due to the non-uniform distribution of failures and the presence of a mid-phase spike, 8 intervals were selected. This allows for better resolution of changes in failure intensity while still maintaining reasonable smoothing.
+
+
+An effort interval of 20 for covariate F was selected based on the observed distribution of failures. A significant concentration of failures occurs at higher F values (≥ 20), indicating a transition to a higher failure intensity region. Using 20 efforts per interval therefore provides a meaningful grouping that captures this shift while maintaining stability in intensity estimation.
+
 # Assessment Using Reliability Demonstration Chart 
 
 ## Plot for MTTFmin
