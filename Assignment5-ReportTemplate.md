@@ -118,8 +118,10 @@ Therefore, it seems like they have different specializations. The Reliability Gr
 # Discussion on Similarity and Differences of the Two Techniques
 
 # How the team work/effort was divided and managed
-
-# 
+| Name            | Section                                                       |
+| --------------- | ------------------------------------------------------------- |
+| Kwesi, Lawrence | RGT, Comparison, Difficulties & challenges, Comments/feedback |
+| Zhanzhi, Joe    | RDC, Comparison, Difficulties & challenges, Comments/feedback |
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
