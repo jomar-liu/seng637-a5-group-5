@@ -10,7 +10,7 @@
 |                | Zhanzhi |
 
 # Introduction
-This lab analyzes integration test failure data using two reliability assessment approaches: Reliability Growth Testing and Reliability Demonstration Charts (RDC). Reliability growth testing models how failure intensity changes over time as faults are detected and fixed, while RDC evaluates whether the system meets specified reliability targets. Together, these methods provide both analytical insight and decision support for assessing the reliability of the system under test (SUT).
+This lab analyzes integration test failure data using two reliability assessment approaches: Reliability Growth Testing (RGT) and Reliability Demonstration Charts (RDC). Reliability growth testing models how failure intensity changes over time as faults are detected and fixed, while RDC evaluates whether the system meets specified reliability targets. Together, these methods provide both analytical insight and decision support for assessing the reliability of the system under test (SUT).
 
 # Assessment Using Reliability Growth Testing 
 Reliability growth testing helps estimate time, cost, and trends for improving product reliability through corrective actions.
@@ -115,7 +115,17 @@ Reliability Growth Testing provided a prediction of the SUT's reliability, while
 
 Therefore, it seems like they have different specializations. The Reliability Growth Testing focuses on the future trend of a system, while the RDC gives a real-time determination on whether the system should be rejected or accepted. 
 
-# Discussion on Similarity and Differences of the Two Techniques
+# Discussion on Similarities and Differences of the Two Techniques
+
+## Similarities
+1. Similar data input: both mainly require failure occurrences and time.
+2. The goal: both determine whether the system is reliable enough to release.
+3. Both provide statistical and mathematical proof on system reliability.
+
+## Differences
+1. Risk parameters: only RDC accepts and relies on customizable risk profiles.
+2. Predictive ability: RGT has great forecasting ability, but RDC has none.
+3. Purpose: RGT provides a trend and prediction on systems' reliability, while RDC helps to make reject/accept decisions.
 
 # How the team work/effort was divided and managed
 | Name            | Section                                                       |
@@ -124,5 +134,10 @@ Therefore, it seems like they have different specializations. The Reliability Gr
 | Zhanzhi, Joe    | RDC, Comparison, Difficulties & challenges, Comments/feedback |
 
 # Difficulties encountered, challenges overcome, and lessons learned
+- Spent quite a bit of time studying, comparing, and picking the RGT models.
+- It was not very easy to get the RDC macros working.
+- Learned that RGT and RDC use similar data, and how to convert the data for them.
 
 # Comments/feedback on the lab itself
+- Very practical lab to gain hands-on experience on RGT and RDC tools.
+- The lab instructions are very concise.
