@@ -86,7 +86,7 @@ The MTTFmin was determined by iteratively adjusting the MTTF until finding the b
 
 In the end, the MTTFmin we found was roughly 54 intervals / 1500 Failures = 0.036. Therefore, twice of it is 54 / 750 = 0.072, half of it is 54 / 3000 = 0.018.  
 
-As shown in the following plots, the line never enters the Reject region and ends at the Accept region when MTTF = 0.036; when MTTF = 0.072, the SUT is rejected shortly after the 15th failure; when MTTF = 0.018, more parts of the line stay in the Accept region.  
+As shown in the following plots, the line merely avoids the Reject region and ends at the Accept region when MTTF = 0.036; when MTTF = 0.072, the SUT is rejected shortly at around the 15th failure; when MTTF = 0.018, most parts of the line stay in the Accept region.  
 
 The MTTFmin of 0.036 seems much lower than the overall average MTTF, where 54.3 / 92 = 0.59. Because the software experienced a severe density of failures early in testing (13 failures in the first 1.05 units of effort), the chart plot rises aggressively at the start. To prevent the software from crossing the Reject boundary during this early unstable phase, the target MTTF had to be lowered drastically to 0.036.
 
