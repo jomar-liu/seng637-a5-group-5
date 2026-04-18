@@ -111,9 +111,12 @@ The MTTFmin of 0.036 seems much lower than the overall average MTTF, where 54.3 
 
 # Comparison of Results
 
-Reliability Growth Testing provided a prediction of the SUT's reliability, while the RDC demonstrated whether the system was rejected or accepted at every moment.  
+Reliability Growth Analysis gives you the richer picture — it identifies two distinct failure bursts (intervals 1–3 and 19–22), fits them with GM(F) as primary and DW3(F) as secondary, and projects continued improvement over 8 future intervals with 20 effort units per interval. The two-phase pattern suggests two separate defect populations being exposed during testing.<br>
+RDC gives you the binary confirmation — the observed failure trace crossed into the Accept zone on all three discrimination ratios tested. RDC 2 (tighter ratio) was the most challenging, with the trace spending time in the Continue Test (yellow) band before ultimately resolving as Accept around 500 normalized usage units. RDC 1 and RDC 3 resolved more cleanly and earlier.
 
-Therefore, it seems like they have different specializations. The Reliability Growth Testing focuses on the future trend of a system, while the RDC gives a real-time determination on whether the system should be rejected or accepted. 
+Reliability Growth Testing provided a prediction of the SUT's reliability, while the RDC demonstrated whether the system was rejected or accepted at every moment.  
+Therefore, it seems like they have different specializations. The Reliability Growth Testing focuses on the future trend of a system, while the RDC gives a real-time determination on whether the system should be rejected or accepted.<br>
+Together they provide both a decision verdict and a growth narrative — a stronger case for release confidence than either method alone.
 
 # Discussion on Similarities and Differences of the Two Techniques
 
