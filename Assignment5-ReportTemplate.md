@@ -27,7 +27,7 @@ BIC (Bayesian Information Criterion)
 Bayesian information criterion (BIC) or Schwarz information criterion (also SIC, SBC, SBIC) is a criterion for model selection among a finite set of models. 
 BIC is similar to AIC but applies a stronger penalty for complexity, especially as sample size increases.
 
-Generally models with lower AIC or BIC are generally preferred.
+Models with lower AIC or BIC are generally preferred.
 
 A set of candidate models was evaluated using multiple selection criteria, including log-likelihood, Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), and error-based metrics such as SSE. Among all models, DW3 (F) and GM (F) emerged as the top two based on their superior performance.
 After analyzing the Model Comparison tables from C-SFRAT, we determined that the Discrete Weibull Type 3 model, with covariate F is the best model, with AIC of 122.199 and BIC of 127.935. The second best is the Geometric Model with covariate F with AIC of 125.323 and BIC of 129.625.
